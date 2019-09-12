@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Jobaxy - Brand Yourself</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+
+<body>
+    <div id="page-transitions">
+        <div class="page-content">
+            <div class="video-container">
+                <div class="cancel-recording">Cancel</div>
+                <div class="startCon">
+                    <i class="rec2">
+                        <span class="rec-inside"></span>
+                        <span id="countdowntimer">3</span>
+                    </i>
+                    <span>Start Recording</span>
+                </div>
+                <div class="recordBtn">
+                    <div class="cancelBtn back-button">Cancel</div>
+                    <div class="stop-rec"></div>
+                    <div class="uploadBtn">Upload</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('.startCon').click(function () {
+                var timeleft = 3;
+                $('.startCon').addClass('starting');
+                $('.startCon, .recordBtn, .cancel-recording').removeClass('preview');
+                var downloadTimer = setInterval(function () {
+                    timeleft--;
+                    document.getElementById("countdowntimer").textContent = timeleft;
+                    if (timeleft <= 0){
+                        clearInterval(downloadTimer);
+                        if  (timeleft == 0){
+                            $('.startCon, .recordBtn, .cancel-recording').addClass('recording');
+                            $('.startCon').removeClass('starting');
+                        }
+                    }
+                }, 1000);
+            });
+            $('.cancel-recording').click(function () {
+                $('.startCon, .recordBtn, .cancel-recording').removeClass('recording');
+                $('.startCon, .recordBtn, .cancel-recording').removeClass('preview');
+            });
+            $('.stop-rec').click(function () {
+                $('.startCon, .recordBtn, .cancel-recording').addClass('preview');
+            });
+        })
+
+
+
+    </script>
+
+
+</body>

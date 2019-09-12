@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Jobaxy - Brand Yourself</title>
+
+    <link rel="stylesheet" type="text/css" href="fonts/MaterialDesign-Webfont/css/materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+<body  class=" bg-black">
+    <div id="page-transitions" class=" bg-black">
+        <div class="header header-dark header-logo-center header-round">
+            <a href="#" class="header-icon header-icon-1 back-button">
+                <i class="mdi mdi-chevron-left"></i>
+            </a>
+            <span class="header-title header-icon-1">Profile Picture</span>
+        </div>
+
+        <div class="page-content bg-black header-clear-small">
+            <div class="profile-pic">
+                <img id="blah" src="images/profile/temp1.png" alt="your image" />
+                <!-- no profile pic image -->
+                <!-- <img id="blah" src="images/profile/temp.jpg" alt="your image" /> -->
+            </div>
+
+            <input id="pic-upload" type='file' onchange="readURL(this);" />
+            <label for="pic-upload" class="pic-uploadBtn">
+                <i class="mdi mdi-camera-account"></i>
+                <span>Change Profile Picture</span>
+            </label>
+            <div class="footer footer-dark submit-footer">
+                <a class="submitBtn dark" href="#">Save</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</body>

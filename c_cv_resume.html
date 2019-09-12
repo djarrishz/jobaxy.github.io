@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Sign up or Login to Apply for Jobs | Jobaxy - Brand Yourself</title>
+
+    <link rel="stylesheet" type="text/css" href="fonts/MaterialDesign-Webfont/css/materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+
+<body>
+    <div id="page-transitions">
+
+        <div class="header header-light  header-logo-center header-round">
+            <a href="profile.html" class="header-icon header-icon-1">
+                <i class="mdi mdi-chevron-left"></i>
+            </a>
+            <span class="header-title header-icon-1">Profile Completion</span>
+            <a href="c_video_resume.html" class="open-search header-icon header-icon-4">
+                    <span style="color: #3fac1d">Skip </span> 
+                </a>
+        </div>
+
+        <div class="page-content header-clear-large">
+                <div class="steps">
+                        <div class="line"></div>
+                        <ul>
+                            <li  class="current">
+                                <a id="form-total-t-0" href="#">
+                                    <div class="title">
+                                        <span class="step-icon">
+                                            <i class="mdi mdi-file-account"></i>
+                                        </span>
+                                        <span class="step-text">Resume / CV</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="form-total-t-0" href="c_video_resume.html">
+                                
+                                    <div class="title">
+                                        <span class="step-icon">
+                                            <i class="mdi mdi-video"></i>
+                                        </span>
+                                        <span class="step-text">Video Resume</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li >
+                                <a id="form-total-t-0" href="c_audio_resume.html">
+                                
+                                    <div class="title">
+                                        <span class="step-icon">
+                                            <i class="mdi mdi-microphone"></i>
+                                        </span>
+                                        <span class="step-text">Audio Resume</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            <div class="page-form top-30">
+                <form>
+                    <div class="page-form-field">
+                        <label>Resume Title</label>
+                        <input type="text">
+                    </div>
+                    <div class="page-form-field resume-upload">
+                        <input type="file" name="file-2" id="file-2" class="inputfile inputfile-2"
+                            data-multiple-caption="{count} files selected" multiple />
+                        <label for="file-2">
+                            <i class="mdi mdi-file-upload"></i>
+                            <span>Upload Your Resume</span>
+                        </label>
+                    </div>
+                    <div class="footer footer-light submit-footer">
+                        <a class="submitBtn" href="#">Save</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        var inputs = document.querySelectorAll('.inputfile');
+        Array.prototype.forEach.call(inputs, function (input) {
+            var label = input.nextElementSibling,
+                labelVal = label.innerHTML;
+
+            input.addEventListener('change', function (e) {
+                var fileName = '';
+
+                fileName = e.target.value.split('\\').pop();
+
+                if (fileName)
+                    label.querySelector('span').innerHTML = fileName;
+                else
+                    label.innerHTML = labelVal;
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</body>

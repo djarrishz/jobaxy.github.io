@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Jobaxy - Brand Yourself</title>
+
+    <link rel="stylesheet" type="text/css" href="fonts/MaterialDesign-Webfont/css/materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <link rel="stylesheet" href="scripts/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="plugins/material-datepicker/dist/material-datepicker.css">
+
+
+    <body>
+        <div id="page-transitions">
+            <div class="header header-light header-logo-center header-round">
+                <span class="header-title">Upcoming Interview</span>
+                <a href="#" class="header-icon header-icon-1 back-button">
+                        <i class="mdi mdi-chevron-left"></i>
+                </a>
+            </div>
+
+            <div class="page-content header-clear-large">
+
+
+                <div class="calendar">
+                    <div class="cal-footer">
+                        <div class="cal-schedule card-list ">
+                            <a href="#" data-menu="view-cal" class="cal-option">
+                                <i class="mdi mdi-dots-vertical"></i>
+                            </a>
+                            <em>10:00 PM
+                                <br>9/7/2018</em>
+                            <strong>Marketing Assistant</strong>
+                            <span>
+                                <i class="mdi mdi-office-building color-green-dark"></i>Klaiya – Digital Solution
+                            </span>
+                            <span>
+                                <i class="mdi mdi-information"></i>Pending
+                            </span>
+                            <div class="cal-status">
+                                <a href="#">
+                                    <span class="color-green-dark">Accept</span>
+                                </a>
+                                <a href="#">
+                                    <span class="color-red-dark">Deny</span>
+                                </a>
+                                <a href="#" data-menu="reschedForm">
+                                    <span class="last color-yellow-dark">Rescheduled</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="cal-schedule card-list">
+                            <a href="#" data-menu="view-cal" class="cal-option">
+                                <i class="mdi mdi-dots-vertical"></i>
+                            </a>
+                            <em>12:00 AM
+                                <br>10/12/2018</em>
+                            <strong>Technical Engineer</strong>
+                            <span>
+                                <i class="mdi mdi-office-building color-green-dark"></i>CONCRETE VENTURES GROUP, INC.
+                            </span>
+                            <span class="color-green-dark">
+                                <i class="mdi mdi-information"></i>Accepted
+                            </span>
+                            <div class="cal-status"></div>
+                        </div>
+
+                        <div class="cal-schedule card-list">
+                            <a href="#" data-menu="view-cal" class="cal-option">
+                                <i class="mdi mdi-dots-vertical"></i>
+                            </a>
+                            <em>3:00 PM
+                                <br>12/25/2018</em>
+                            <strong>Office Clerk</strong>
+                            <span>
+                                <i class="mdi mdi-office-building color-green-dark"></i>Alchemco Phils. Inc
+                            </span>
+                            <span class="color-red-dark">
+                                <i class="mdi mdi-information"></i>Denied
+                            </span>
+                            <div class="cal-status">
+                            </div>
+                        </div>
+
+                        <div class="cal-schedule card-list">
+                            <a href="#" data-menu="view-cal" class="cal-option">
+                                <i class="mdi mdi-dots-vertical"></i>
+                            </a>
+                            <em>3:00 PM
+                                <br>12/25/2018</em>
+                            <strong>Office Clerk</strong>
+                            <span>
+                                <i class="mdi mdi-office-building color-green-dark"></i>Alchemco Phils. Inc
+                            </span>
+                            <span class="color-yellow-dark">
+                                <i class="mdi mdi-information"></i>Rescheduled
+                            </span>
+                            <div class="cal-status">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-menu-height="120" id="view-cal" class="menu menu-box menu-bottom">
+                <ul class="link-list">
+                    <li>
+                        <a href="job_details.html" data-menu="menu-1">
+                            <i class="font-22 mdi mdi-briefcase  color-green-dark"></i>
+                            <span>Marketing Assistant</span>
+                            <em>View Job</em>
+                            <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="company_details.html" data-menu="menu-2">
+                            <i class="font-22 mdi mdi-office-building color-blue-dark"></i>
+                            <span>Klaiya – Digital Solution</span>
+                            <em>View Company</em>
+                            <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div data-menu-height="230" id="reschedForm" class="menu menu-box menu-top">
+                <div class="menu-scroll">
+                    <div class="content bottom-0">
+                        <h4 class="center-text top-20 bottom-10">Reschedule Interview</h4>
+                        <p class="boxed-text-large font-12 bottom-20">
+                            Enter new schedule below.
+                        </p>
+                        <div>
+                            <div class="decoration-sidebar bottom-15"></div>
+                            <form>
+                                <div class="page-form">
+                                    <div class="page-form-field">
+                                        <label>New Date</label>
+                                        <input type="text" id="materialpicker001">
+                                    </div>
+                            
+                                    <div class="formSubmitButtonErrorsWrap contactFormButton">
+                                        <input type="submit" class="buttonWrap button button-green button-s button-rounded uppercase ultrabold contactSubmitButton"
+                                            value="Submit" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript" src="scripts/jquery.js" ></script>
+        <script type="text/javascript" src="scripts/plugins.js" ></script>
+
+        
+    <script type="text/javascript" src="plugins/material-datepicker/dist/material-datepicker-with-moment-js.min.js"></script>
+
+    <script type="text/javascript">
+        var monthpicker = new MaterialDatepicker('#materialpicker001', {
+            // type: 'month',
+            color: "#3fac1d",
+            orientation: 'portrait',
+            outputFormat: 'DD/MM/YYYY'
+        });
+    </script>
+
+        <script type="text/javascript" src="scripts/custom.js" ></script>
+
+
+    </body>

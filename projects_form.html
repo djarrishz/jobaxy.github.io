@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Jobaxy - Brand Yourself</title>
+
+    <link rel="stylesheet" type="text/css" href="fonts/MaterialDesign-Webfont/css/materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="plugins/material-datepicker/dist/material-datepicker.css">
+
+
+
+<body>
+    <div id="page-transitions">
+        <div class="header header-light  header-logo-center header-round">
+            <a href="#" class="header-icon header-icon-1 back-button">
+                    <i class="mdi mdi-chevron-left"></i>
+            </a>
+            <span class="header-title header-icon-1">Project</span>
+        </div>
+
+        <form>
+            <div class="page-content header-clear-larger">
+                <div class="page-form">
+
+                    <div class="page-form-field">
+                        <label>Project Title</label>
+                        <input type="text" placeholder="Project Title Here">
+                    </div>
+
+                    <div class="div2 bottom-15"></div>
+
+                    <div class="page-form-field cur-employed">
+                        <label>Ongoing Project</label>
+                        <div class="two-radio">
+                            <label for="yes">
+                                <input type="radio" name="ongoing" id="yes" checked />
+                                <i class="mdi mdi-check"></i>
+                            </label>
+                            <label for="no">
+                                <input type="radio" name="ongoing" id="no" />
+                                <i class="mdi mdi-close"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="div2 bottom-20"></div>
+
+                    <div class="page-form-field">
+                        <label>Project Start Date</label>
+                        <input type="text" id="materialpicker001">
+                    </div>
+
+                    <div class="page-form-field">
+                        <label>Project End Date</label>
+                        <input type="text" id="materialpicker002">
+                    </div>
+
+                    <div class="div2 bottom-20"></div>
+
+                    <div class="page-form-field">
+                        <label>Project Description</label>
+                        <textarea rows="5"></textarea>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="footer footer-light submit-footer">
+                <a class="submitBtn" href="#">Save</a>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+
+    <script type="text/javascript" src="plugins/material-datepicker/dist/material-datepicker-with-moment-js.min.js"></script>
+
+    <script type="text/javascript">
+        var monthpicker = new MaterialDatepicker('#materialpicker001', {
+            // type: 'month',
+            color: "#3fac1d",
+            orientation: 'portrait',
+            outputFormat: 'DD/MM/YYYY'
+        });
+
+        var monthpicker = new MaterialDatepicker('#materialpicker002', {
+            // type: 'month',
+            color: "#3fac1d",
+            orientation: 'portrait',
+            outputFormat: 'DD/MM/YYYY'
+        });
+
+    </script>
+
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</body>

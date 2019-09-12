@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Jobaxy - Brand Yourself</title>
+
+    <link rel="stylesheet" type="text/css" href="fonts/MaterialDesign-Webfont/css/materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="plugins/material-datepicker/dist/material-datepicker.css">
+
+
+
+<body>
+    <div id="page-transitions">
+        <div class="header header-light  header-logo-center header-round">
+            <a href="#" class="header-icon header-icon-1 back-button">
+                <i class="mdi mdi-chevron-left"></i>
+            </a>
+            <span class="header-title header-icon-1">Education</span>
+        </div>
+
+        <form>
+            <div class="page-content header-clear-larger">
+                <div class="page-form">
+                    <div class="page-form-field">
+                        <label>School/College/University</label>
+                        <input type="text" placeholder="Name of the School/College/University">
+                    </div>
+
+                    <div class="div2 bottom-20"></div>
+
+                    <div class="page-form-field ">
+                            <label>Degree</label>
+                            <select>
+                                <option value="Certificate">Certificate</option>
+                                <option value="Associates">Associates</option>
+                                <option value="Bachelors">Bachelors</option>
+                                <option value="Masters">Masters</option>
+                                <option value="Doctorate">Doctorate</option>
+                            </select>
+                        </div>
+
+                    <div class="page-form-field ">
+                        <label>Field of Study</label>
+                        <select>
+                            <option value="">Please Select</option>
+                            <option value="Administration">Administration</option>
+                            <option value="Communication &amp; Information Science">Communication &amp; Information
+                                Science</option>
+                            <option value="IT, Computer Science &amp; Programming">IT, Computer Science &amp;
+                                Programming</option>
+                            <option value="Tourism, Hospitality &amp; Culinary">Tourism, Hospitality &amp; Culinary</option>
+                        </select>
+                    </div>
+                    <div class="page-form-field">
+                        <label>Sub Field</label>
+                        <select>
+                            <option value="Information Technology (IT)">Information Technology (IT)</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Computer Engineering">Computer Engineering</option>
+                        </select>
+                    </div>
+                    <div class="page-form-field two-radio">
+                        <label for="completed">
+                            <input type="radio" name="status" id="completed"checked/>
+                            <span>Completed</span>
+                        </label>
+                        <label for="inprogress">
+                            <input type="radio" name="status" id="inprogress" />
+                            <span>In Progress</span>
+                        </label>
+                    </div>
+                    <div class="div2 bottom-20"></div>
+                    <div class="page-form-field">
+                        <label>Completion Year</label>
+                        <input type="text" id="materialpicker001">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="footer footer-light submit-footer">
+                <a class="submitBtn" href="#">Save</a>
+            </div>
+            
+        </form>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="scripts/jquery.js" ></script>
+    <script type="text/javascript" src="scripts/plugins.js" ></script>
+
+    <script type="text/javascript" src="plugins/material-datepicker/dist/material-datepicker-with-moment-js.min.js" ></script>
+    <script type="text/javascript">
+        var monthpicker = new MaterialDatepicker('#materialpicker001', {
+            type: 'month',
+            color: "#3fac1d",
+            orientation: 'portrait',
+            // outputFormat: 'MM/YYYY'
+        });
+    </script>
+
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</body>
